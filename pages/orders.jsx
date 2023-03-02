@@ -2,13 +2,14 @@ import React from 'react';
 import { FaShoppingBag } from 'react-icons/fa';
 import { BsThreeDotsVertical } from 'react-icons/bs';
 import { data } from '../data/data.js';
+import { UserButton } from '@clerk/nextjs';
 
 const orders = () => {
   return (
     <div className='bg-gray-100 min-h-screen'>
       <div className='flex justify-between px-4 pt-4'>
-        <h2>Orders</h2>
-        <h2>Welcome Back, Collio</h2>
+      <h2 className='text-2xl'>Orders</h2>
+        <UserButton/>
       </div>
       <div className='p-4'>
         <div className='w-full m-auto p-4 border rounded-lg bg-white overflow-y-auto'>
